@@ -1,0 +1,109 @@
+---
+layout: post
+title:  "SCSS Memo"
+date:   2014-12-12 16:21:10
+categories: jekyll update
+
+---
+
+Sass是CSS的预处理器，对CSS有语法增强。这些增强语法的样式表被命令行工具或者网页插件工具预处理，变成标准的CSS样式表。
+
+<!-- more -->
+
+Sass并没有拓展CSS标准.如果遇到不写Sass的小伙伴，也可以在预处理后生成的CSS基础上修改。
+
+SCSS有以下几个语法增强功能：
+
+####1. Variables 变量
+
+
+变量用来存储那些样式表中需要重用的信息，比如颜色，字体。Sass用$来表示变量。
+	
+举例：
+	
+{% highlight css %}
+$font-stack;  
+
+color: $primary-color;
+{% endhighlight %}
+	
+将颜色设置为变量可以方便地使得一些品牌颜色在站内保持一致。
+	
+####2. Nesting 嵌套 
+
+嵌套使得CSS具有像HTML一样清晰的层叠网状结构和层次结构，使得代码更加简洁易读。
+	
+举例：
+	
+{% highlight css %}
+	nav {
+	width: 97%;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  a { font-weight: bold; text-decoration: none; &:hover { text-decoration: underline; } body.firefox & { font-weight: normal; } }
+  }
+    {% endhighlight %}
+	
+此外，&符号可以显式指明父选择器应该插入的地方。对于伪类选择器，组合选择器（如&-sidebar {}）或者有两个以上并行选择器的（如p.myContent{}）等情况适用。
+
+甚至还可以应用在font namespace的缩写上：
+
+{% highlight css %}
+.funky { font: { family: fantasy; size: 30em; weight: bold; } }
+
+ {% endhighlight %}
+
+编译为：
+{% highlight css %}
+.funky { font-family: fantasy; font-size: 30em; font-weight: bold; }
+
+ {% endhighlight %}
+
+
+####3. Partials
+
+可以创造部分的Sass，包含小片段的CSS，然后在其他的Sass文件中include. 这样能够使得CSS模块化，更好维护。partial是以下划线开头的Sass片段。比如编译得到_partial.scss.下划线让Sass知道这个文件只是一个partial文件，不用生成CSS文件，Sass partials通过@import引用
+
+####4. Import
+
+CSS有import命令，能够使得CSS分为更小更容易维护的部分。但是他唯一的缺点是每次在CSS中使用@import，它会创建另一个HTTP请求。Sass在现在CSS的基础上，不发出HTTP请求，而是将Import的文件和被import的文件和在一起，提交一个单个CSS文件给浏览器。
+import的时候不需要加.scss后缀
+
+####5. Minxins
+
+CSS，特别是CSS3有很多特定的前缀，maxin能够组合一组CSS声明用来复用，还可以通过传值使得maxin更灵活. 
+
+####6. Extend/Inheritance
+
+使用@extend可以在选择之间共享CSS属性。
+
+####7. Operators
+
+Sass能够使用+, -, *, /, and % 操作符
+
+
+
+#备注
+
+-------
+
+
+#### 编译
+
+SCSS可以使用命令行编译，或者使用gulp编译，sublime还有sassbuilder插件可以编译。
+
+譬如说项目根目录下有_scss与css两个文件夹，将_scss中的scss的文件编译到css文件夹下的main.css，并且开启Deamon监控修改的命令为：
+
+sass --watch  _scss:css
+
+#### .map文件
+
+.map的文件包含了编译css的scss文件的原始位置信息等，所以在chrome下我们才能看见某个css对应的scss文件内容
+
+
+
+

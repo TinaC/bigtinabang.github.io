@@ -1,14 +1,15 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "CSS Specificity"
 date:   2015-02-13 19:31:20
 categories: jekyll update
 
 ---
 
-#CSS Specificity
 
 CSS Specificity 就是我们通常理解的CSS选择器优先级/权重。通常我们大概知道CSS选择器之间的优先级关系，比如id选择器优先级高于class选择器，但是具体是什么计算规则呢？就需要CSS Specificity来回答了。
+
+<!-- more -->
 
 CSS Specificity由四个部分组成，如0，0，0，0.计算规则如下：
 
@@ -23,7 +24,7 @@ CSS Specificity由四个部分组成，如0，0，0，0.计算规则如下：
 关于6，实际上是将有!important样式声明的之间互相按照前五条互相比较，优先应用，然后再考虑其他样式的优先级。
 
 来个图帮助记忆：
-[images/2015/cssSpecificity.png]
+![](/images/2015/cssSpecificity.png)
 
 ( 图片来自<http://specificity.keegan.st> )
 
