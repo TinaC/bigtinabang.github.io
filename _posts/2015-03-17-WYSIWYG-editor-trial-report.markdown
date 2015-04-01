@@ -9,8 +9,6 @@ categories: jekyll update
 
 最近甲方提新需求要先做广告页的上传，涉及到对富文本的处理，找了几个WYSIWYG编辑器（What You See Is What You Get，所见即所得），真是既简单又方便。
 
-This is an [example link](http://example.com/)
-
 <!-- more -->
 
 ## Bootstrap-wysiwyg
