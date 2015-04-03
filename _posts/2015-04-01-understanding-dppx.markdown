@@ -1,15 +1,18 @@
 ---
 layout: post
-title:  " Mobile web content adaptation-Understanding DPI"
-date:   2015-03-01 17:07:00
+title:  "Mobile Web Content Adaptation ———— Understanding DPI"
+date:   2015-04-01 17:07:00
 categories: jekyll update
 
 ---
 
 
-最近甲方提出了一个需求(怎么又是这个开头)，要首页在手机竖屏的时候显示两个图标一排，横屏的时候和电脑显示方式一致。他一致强调他的手机lumia 920是分辨率1280x768px,所以横过来应该理所应当和电脑（1440x900px）一致。但是事情没有他想象的那么简单，因为CSS 像素和设备像素不是对等的，它们之间需要通过设备像素比(device pixel ratio) 进行换算。
+最近甲方提出了一个需求(怎么又是这个开头)，要首页在手机竖屏的时候显示两个图标一排，横屏的时候和电脑显示方式一致。他一致强调他的手机lumia 920是分辨率1280x768px,所以横过来应该理所应当和电脑（1440x900px）一致。但是事情没有他想象的那么简单。
 
 <!-- more -->
+
+因为CSS 像素和设备像素不是对等的，它们之间需要通过设备像素比(device pixel ratio) 进行换算。
+
 
 ![](../assets/article_images/2015/dpi-1.png)
 
