@@ -104,6 +104,20 @@ sass --watch  _scss:css
 
 .map的文件包含了编译css的scss文件的原始位置信息等，所以在chrome下我们才能看见某个css对应的scss文件内容
 
+#### !default
+<pre>
+<code>
+$content: "First content";
+$content: "Second content?" !default;
+$new_content: "First time reference" !default;
+
+#main {
+  content: $content;
+  new-content: $new_content;
+}
+</code>
+</pre>
+如果该变量没有赋值或者值为null，则赋值。否则不赋值。
 
 
 

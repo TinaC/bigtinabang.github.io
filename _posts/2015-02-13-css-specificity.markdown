@@ -24,7 +24,7 @@ CSS Specificity由四个部分组成，如0，0，0，0.计算规则如下：
 关于6，实际上是将有!important样式声明的之间互相按照前五条互相比较，优先应用，然后再考虑其他样式的优先级。
 
 来个图帮助记忆：
-![](/images/2015/cssSpecificity.png)
+![](/assets/article_images/2015/cssSpecificity.png)
 
 ( 图片来自<http://specificity.keegan.st> )
 
