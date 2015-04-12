@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobile Web Content Adaptation ———— Understanding DPI"
+title:  "Mobile Web Content Adaptation —— Understanding DPI"
 date:   2015-04-01 17:07:00
 categories: jekyll update
 

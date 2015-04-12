@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Mobile Web Content Adaptation ———— Add Breakpoint For Bootstrap"
+title:  "Mobile Web Content Adaptation —— Add Breakpoint For Bootstrap"
 date:   2015-04-06 15:30:00
 categories: jekyll update
 
