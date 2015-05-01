@@ -25,6 +25,18 @@ categories: jekyll update
 
 * PPI: Pixels per inch，又叫采样率，也是密度单位，经常和DPI混用。从技术角度说，“像素”（pixel）只存在于计算机显示领域，而“点”（dot）只出现于打印或印刷领域。所以准确来说应该用PPI(Pixel Per Inch)表示数字影像的解析度，以区分二者。
 
+DPI用来表示输出设备的输出精度，如打印机，显示器
+
+DPI表示的是 像点/英寸（每英寸长度上有多少个打印点或像点）
+
+PPI用来表示输入设备的输入精度，如扫描仪，数码相机
+
+PPI表示的是　像素/英寸（每英寸长度上有多少个像素）
+
+像点和像素关系是这样的，一个像点可以是一个或几个像素，一个像素也可以是一个或几个像点， 比如我们打印一张分辨率为100PPI的照片，打印机的打印分辨率设为300DPI，这时三个打印点表现一个像素，如果我们打印一张600PPI的照片， 同样以300DPI来打印这时一个打印点表现两个像素。
+
+DPI和PPI其实是和前端没太大关系，只是知道了这个以后就被绕晕了，感觉不搞清楚不行了。在很早很早以前，PPI根据定义是屏幕逻辑像素px/物理像素inch, 大概是72ppi左右，但是实际上window都设置默认值为96ppi，也就是说ppi不再是一个计算得到的值，而是一个可设置的coefficient，代表着一个inch中包含多少个像素点。想想在windows中我们设置分辨率这个场景就可以理解了（mac不能用户设置，大概是因为它不需要去考虑各种厂商的不同显示器吧）。
+
 * dppx: Number of dots per px unit. [一篇博客](http://madewithdrew.com/blog/working-with-dppx/)说1dppx = 96dpi,应该不是说他们的转化关系，而是[大部分电脑显示器的dpi值](http://blogs.msdn.com/b/fontblog/archive/2005/11/08/where-does-96-dpi-come-from-in-windows.aspx)。
 
 	之前说到CSS DPI和物理DPI不同，所以需要利用转化。比如CSS中width:100px的元素在普通屏幕上是100物理像素点，但是在retina等屏幕上是200物理像素点，所以retina屏幕的dppx=2（Dots per physical inch/Dots per CSS inch）
