@@ -14,8 +14,8 @@ logob: "/assets/images/logob.jpg"
 # blog cover
 cover: "/assets/images/banner.jpg"
 
-name: 'BigTinaBang'
-author: 'Tina Chen'
+name: '陈天'
+author: '陈天'
 author_image: "/assets/images/author.png"
 
 paginate:	5
@@ -25,12 +25,19 @@ baseurl: ""
 
 # social icons and sharing options
 social:
-  - icon:	twitter
+  - icon:	weibo
     url:	http://www.weibo.com/u/1291261522
     desc: Follow me on weibo
-    share_url: http://weibo.com/share
+    share_url: http://service.weibo.com/share
     share_title: ?text=
     share_link: "&amp;url="
+    
+#  - icon:	sign-blank
+#   url:	http://www.zhihu.com/people/bigtinabang
+#    desc:	Fork me on zhihu
+#    share_url:
+#    share_title:
+#    share_link:
 
 #  - icon:	facebook
 #    url:	https://facebook.com/???
