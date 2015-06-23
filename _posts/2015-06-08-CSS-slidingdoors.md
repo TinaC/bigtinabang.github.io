@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "CSS Sliding Doors"
-date:   2015-04-10 13:50:00
+date:   2015-06-08 14:36:00
 categories: jekyll update
 
 ---
@@ -25,14 +25,32 @@ HTML Code:
 {% endhighlight %}
 
 a的背景图片是右边的圆角：
+
+
 ![](/assets/article_images/2015/slidingdoor2.png)
+
+
 span的背景图片为左边的圆角加上中间部分，宽度要超过元素可能设定的最大宽度
+
+
 ![](/assets/article_images/2015/slidingdoor1.png)
+
+
+注意将a的背景图片样式设置为right:
+{% highlight html %}
+background: transparent url('images/button_right_orange.png') no-repeat top right;
+{% endhighlight %}
+
 
 两张图片合起来组成滑动门。
 
 当宽度增加时（span中的文字增加），背景图片会填满背景空间。
 ![](/assets/article_images/2015/slidingdoor3.png)
+
+
+文字增加后，背景依然保持：
+
+
 ![](/assets/article_images/2015/slidingdoor4.png)
 
 
