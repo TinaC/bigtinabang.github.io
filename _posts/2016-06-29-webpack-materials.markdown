@@ -22,7 +22,7 @@ Google选了一些文章，其中![Why Can’t Anyone Write a Simple Webpack Tut
 
 寸志在！[Hello Sea.js]（http://island205.github.io/HelloSea.js/getting-started.html）中介绍了前端模块化和sea.js的使用，并且写了如何编写自己的模块加载器。对理解js模块化思想很有帮助（这是人家15年写的博客啊...）
 
-![webpack-for-fools傻瓜式指南](https://github.com/vikingmute/webpack-for-fools)是迄今为止对我帮助最大的webpack指南，提供了可运行代码，并且使用了webpack-dev-server，sass-loader, babel-loader，source-map等loader、插件，不用再使用require,而是可以直接使用es6 import,模块化技术更进一步！
+![webpack-for-fools傻瓜式指南](https://github.com/vikingmute/webpack-for-fools)是迄今为止对我帮助最大的webpack指南，提供了可运行代码，并且使用了webpack-dev-server，sass-loader, babel-loader，source-map等loader、插件，不用再使用require,而是可以直接使用es6 import,模块化技术更进一步！对该文章的config.js，我每一句都看了并补充了注释。
 
 在实践这篇博客的过程中，对于![html-webpack-plugin](https://www.npmjs.com/package/html-webpack-plugin)的使用博主并没有讲的太细致，所以看了官方文档。
 这个插件可以帮你生成HTML。本来可以自己在build文件夹里面手动建一个index.html文件夹，然后再把合并以后的js引用在里面，但是这样有些麻烦，所以html-webpack plugin可以自动快速的帮我们生成HTML。
