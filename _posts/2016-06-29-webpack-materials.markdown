@@ -31,7 +31,7 @@ Google选了一些文章，其中[Why Can’t Anyone Write a Simple Webpack Tuto
 
 如果生成的HTML不满足需求，可以自己编写HTML模板，采用inject方式引入资源。
 
-此外，webpack.config.js采用Node.js编写，[path.resolve()](https://nodejs.org/docs/latest/api/path.html#path_path_resolve_path)和![_dirname](https://nodejs.org/docs/latest/api/globals.html#globals_dirname)等方法和全局变量可以在node文档中查到。
+此外，webpack.config.js采用Node.js编写，[path.resolve()](https://nodejs.org/docs/latest/api/path.html#path_path_resolve_path)和[_dirname](https://nodejs.org/docs/latest/api/globals.html#globals_dirname)等方法和全局变量可以在node文档中查到。
 
 腾讯的一个哥们提供了一个更复杂的[webpack bootstrap](https://github.com/chemdemo/chemdemo.github.io/issues/10),看完后对chunks等概念有了更清晰的理解，并且教了如何搭建一个local webserver。
 
